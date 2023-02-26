@@ -1,0 +1,16 @@
+{
+  "name": "바은감사",
+  "short_name": "바은감사",
+  "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+  "icons": [
+    {
+      "src": "icons/logo.svg",
+      "sizes": "32x32 512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
