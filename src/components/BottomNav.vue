@@ -17,7 +17,7 @@ footer {
     justify-content: space-around;
     padding: 16px 16px;
     gap: 8px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;

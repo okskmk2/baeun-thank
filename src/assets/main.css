@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+#app {
+  position: relative;
+  min-height: 100dvh;
+}
+
 body, button, select, input, textarea, pre {
   font-family: sans-serif;
 }
