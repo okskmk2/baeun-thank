@@ -34,10 +34,9 @@ export default {
 }
 .goto_send_btn {
   margin-top: 32px;
-  width: 100%;
   justify-content: center;
   font-size: 16px;
-  padding: 8px;
+  padding: 8px 24px;
   background-color: #791764;
   color: white;
   border-style: none;

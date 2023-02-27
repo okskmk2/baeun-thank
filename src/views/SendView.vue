@@ -8,13 +8,13 @@
     </div>
     <div class="input_group">
       <label>받은 사람</label>
-      <input type="text" autocomplete="off">
+      <input type="text" autocomplete="off" class="gray_input">
     </div>
-    <div class="input_group" style="margin-top:12px">
+    <div class="input_group" style="margin-top:18px">
       <label>내용</label>
-      <textarea></textarea>
+      <textarea class="gray_input" style="line-height: 1.7;" rows="2"></textarea>
     </div>
-    <div style="margin-top:16px">
+    <div style="margin-top:42px">
       <button class="icon_label_btn send_btn">
         <span>감사 보내기</span>
         <span class="material-symbols-outlined">send</span>
@@ -27,12 +27,19 @@ export default {
 }
 </script>
 <style scoped>
+.gray_input {
+  padding: 12px;
+  font-size: 18px;
+  border-style: none;
+  background-color: #f1f1f1;
+}
+
 .send_btn {
   width: 100%;
   justify-content: center;
   font-size: 16px;
-  padding: 8px;
-  gap:8px;
+  padding: 12px;
+  gap: 8px;
   background-color: #791764;
   color: white;
   border-style: none;
