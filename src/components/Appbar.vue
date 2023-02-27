@@ -1,17 +1,14 @@
 <template>
     <header class="appbar">
         <div>title</div>
-        <div>
-            <NotificationsIcon />
-            <AccountCircleIcon />
+        <div class="appbar_actions">
+            <router-link to="/history" class="material-symbols-outlined">notifications</router-link>
+            <router-link to="/history" class="material-symbols-outlined">account_circle</router-link>
         </div>
     </header>
 </template>
 <script>
-import AccountCircleIcon from "./icons/AccountCircleIcon.vue";
-import NotificationsIcon from "./icons/NotificationsIcon.vue";
 export default {
-    components: { NotificationsIcon, AccountCircleIcon }
 }
 </script>
 <style>
@@ -23,5 +20,13 @@ export default {
     left: 0;
     right: 0; */
     padding: 16px;
+}
+.appbar_actions {
+    display: flex;
+    gap: 8px;
+}
+.appbar_actions a {
+    text-decoration: none;
+    color:#333;
 }
 </style>

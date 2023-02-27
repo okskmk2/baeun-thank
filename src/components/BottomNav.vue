@@ -14,7 +14,7 @@ export default {
 <style scoped>
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 16px 16px;
     gap: 8px;
     position: fixed;
@@ -26,6 +26,7 @@ footer {
 footer a {
     text-decoration: none;
     color: #999;
+    user-select: none;
 }
 
 footer a.router-link-exact-active {
