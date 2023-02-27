@@ -26,7 +26,7 @@ footer {
 footer a {
     text-decoration: none;
     color: #999;
-    user-select: none;
+    cursor: default;
 }
 
 footer a.router-link-exact-active {

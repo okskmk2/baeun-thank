@@ -1,6 +1,6 @@
 <template>
     <header class="appbar">
-        <div>{{ title }}</div>
+        <h1 class="page_title">{{ title }}</h1>
         <div class="appbar_actions">
             <router-link to="/history" class="material-symbols-outlined">notifications</router-link>
             <router-link to="/history" class="material-symbols-outlined">account_circle</router-link>
@@ -31,9 +31,16 @@ export default {
 }
 </script>
 <style>
+h1.page_title {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
 .appbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* position: fixed;
     top: 0;
     left: 0;

@@ -10,6 +10,8 @@ body, button, select, input, textarea, pre {
 }
 
 .main_layout main {
+  padding-left: 16px;
+  padding-right: 16px;
   /* margin-top: 42px; */
 }
 
@@ -22,6 +24,12 @@ body, button, select, input, textarea, pre {
   display: block;
   width: 100%;
   box-sizing: border-box;
+}
+
+.icon_label_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .default_padding {
