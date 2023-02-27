@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 
+import LoginView from "../views/LoginView.vue";
+
 import HomeView from '../views/HomeView.vue'
 import MapView from '../views/MapView.vue'
 import SendView from '../views/SendView.vue'
@@ -8,31 +10,51 @@ import HistoryView from '../views/HistoryView.vue'
 import StartView from '../views/StartView.vue'
 import MainLayout from "../layouts/MainLayout.vue";
 
-const routes =  [
+function checkLogin() {
+  return localStorage.getItem('username');
+}
+
+const routes = [
   {
-    path: '/',
+    path: '',
     name: 'start',
-    component: StartView
+    component: StartView,
+    beforeEnter: (to, from, next) => {
+      if (checkLogin()) {
+        next('/home');
+      } else {
+        next('/login');
+      }
+    }
   },
   {
-    path:'',
+    path: '/login',
+    name: 'login',
+    component: LoginView
+  },
+  {
+    path: '',
     component: MainLayout,
-    children:[
+    children: [
       {
-        path:'home',
-        component:HomeView
+        path: 'home',
+        name:'홈',
+        component: HomeView
       },
       {
-        path:'map',
-        component:MapView
+        path: 'map',
+        name:'지도',
+        component: MapView
       },
       {
-        path:'send',
-        component:SendView
+        path: 'send',
+        name:'보내기',
+        component: SendView
       },
       {
-        path:'history',
-        component:HistoryView
+        path: 'history',
+        name:'히스토리',
+        component: HistoryView
       },
     ]
   }
@@ -43,6 +65,10 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   // history: createWebHistory(import.meta.env.BASE_URL),
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  next();
 })
 
 export default router

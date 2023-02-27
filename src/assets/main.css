@@ -12,3 +12,18 @@ body, button, select, input, textarea, pre {
 .main_layout main {
   /* margin-top: 42px; */
 }
+
+.input_group label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input_group :where(input, textarea) {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.default_padding {
+  padding:0 16px;
+}
