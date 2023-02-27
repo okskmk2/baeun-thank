@@ -1,9 +1,8 @@
 <template>
-  <main>
-    home
-  </main>
+<div>start</div>
 </template>
 <script>
 export default {
+    
 }
 </script>

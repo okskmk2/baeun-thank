@@ -1,6 +1,6 @@
 <template>
   <main>
-    home
+    send
   </main>
 </template>
 <script>

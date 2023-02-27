@@ -1,6 +1,6 @@
 <template>
   <main>
-    home
+    map
   </main>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <main>
-    home
+    history
   </main>
 </template>
 <script>
