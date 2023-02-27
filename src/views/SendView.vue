@@ -7,7 +7,7 @@
       </button>
     </div>
     <div class="input_group">
-      <label>받은 사람</label>
+      <label>받는 사람</label>
       <input type="text" autocomplete="off" class="gray_input">
     </div>
     <div class="input_group" style="margin-top:18px">

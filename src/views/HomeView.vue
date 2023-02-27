@@ -14,10 +14,12 @@
         </table>
       </div>
   </div>
+  <div style="text-align: right;">
     <button @click="$router.push('/send')" class="icon_label_btn goto_send_btn">
       <span>감사 보내기</span>
       <span class="material-symbols-outlined">chevron_right</span>
     </button>
+  </div>
   </main>
 </template>
 <script>
@@ -28,9 +30,11 @@ export default {
 .transaction_info th{
   width: 5rem;
   text-align: left;
+  font-weight: normal;
 }
 .transaction_info td {
   text-align: right;
+  font-weight: bold;
 }
 .goto_send_btn {
   margin-top: 32px;
