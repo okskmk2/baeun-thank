@@ -14,8 +14,11 @@
       <label>내용</label>
       <textarea></textarea>
     </div>
-    <div>
-      <button>감사 보내기</button>
+    <div style="margin-top:16px">
+      <button class="icon_label_btn send_btn">
+        <span>감사 보내기</span>
+        <span class="material-symbols-outlined">send</span>
+      </button>
     </div>
   </main>
 </template>
@@ -23,3 +26,16 @@
 export default {
 }
 </script>
+<style scoped>
+.send_btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 16px;
+  padding: 8px;
+  gap:8px;
+  background-color: #791764;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+}
+</style>
