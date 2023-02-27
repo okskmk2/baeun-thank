@@ -22,7 +22,7 @@ footer {
     left: 0;
     right: 0;
     background-color: rgba(255,255,255,0.5);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
 
 footer a {

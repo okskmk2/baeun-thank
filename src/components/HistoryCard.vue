@@ -1,6 +1,6 @@
 <template>
     <div class="history_card">
-        <div>
+        <div @click="$router.push('/profile')">
             <img :src="randomProfileUrl" alt="avatar" class="avatar_img" />
             <div>name</div>
         </div>

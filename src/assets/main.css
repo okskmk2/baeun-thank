@@ -10,7 +10,7 @@ body, button, select, input, textarea, pre {
 }
 
 .main_layout main {
-  padding: 16px;
+  padding:4rem 1rem;
 }
 
 .input_group label {

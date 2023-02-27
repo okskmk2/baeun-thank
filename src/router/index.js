@@ -7,6 +7,9 @@ import MapView from '../views/MapView.vue'
 import SendView from '../views/SendView.vue'
 import HistoryView from '../views/HistoryView.vue'
 
+import MyProfileView from '../views/MyProfileView.vue'
+import ProfileView from '../views/ProfileView.vue'
+
 import StartView from '../views/StartView.vue'
 import MainLayout from "../layouts/MainLayout.vue";
 
@@ -55,6 +58,16 @@ const routes = [
         path: 'history',
         name:'히스토리',
         component: HistoryView
+      },
+      {
+        path: 'myprofile',
+        name:'나의 계정',
+        component: MyProfileView
+      },
+      {
+        path: 'profile',
+        name:'프로필',
+        component: ProfileView
       },
     ]
   }
