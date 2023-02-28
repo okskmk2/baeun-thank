@@ -15,9 +15,9 @@ export default {
 footer {
     display: flex;
     justify-content: space-around;
-    padding: 16px 16px;
+    padding: 16px;
     gap: 8px;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;

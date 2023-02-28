@@ -42,7 +42,7 @@ h1.page_title {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
