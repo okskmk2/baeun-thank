@@ -13,6 +13,8 @@ import ProfileView from '../views/ProfileView.vue'
 import StartView from '../views/StartView.vue'
 import MainLayout from "../layouts/MainLayout.vue";
 
+import TestView from "../views/TestView.vue";
+
 function checkLogin() {
   return localStorage.getItem('username');
 }
@@ -36,37 +38,42 @@ const routes = [
     component: LoginView
   },
   {
+    path: '/test',
+    name: 'test',
+    component: TestView
+  },
+  {
     path: '',
     component: MainLayout,
     children: [
       {
         path: 'home',
-        name:'홈',
+        name: '홈',
         component: HomeView
       },
       {
         path: 'map',
-        name:'지도',
+        name: '지도',
         component: MapView
       },
       {
         path: 'send',
-        name:'보내기',
+        name: '보내기',
         component: SendView
       },
       {
         path: 'history',
-        name:'히스토리',
+        name: '히스토리',
         component: HistoryView
       },
       {
         path: 'myprofile',
-        name:'나의 계정',
+        name: '나의 계정',
         component: MyProfileView
       },
       {
         path: 'profile',
-        name:'프로필',
+        name: '프로필',
         component: ProfileView
       },
     ]
