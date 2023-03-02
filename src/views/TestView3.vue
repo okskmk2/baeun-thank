@@ -144,9 +144,13 @@ export default {
 }
 </script>
 <style scoped>
-.test_wrap {}
+.test_wrap {
+    max-height: calc(100dvh - 100px);
+}
 
 .test_main {
+    margin-top: 50px;
+    margin-bottom: 50px;
     overflow: auto;
     max-height: calc(100dvh - 100px);
     padding: 1rem;
@@ -156,10 +160,18 @@ export default {
 .test_header {
     height: 50px;
     background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .test_footer {
     height: 50px;
     background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 </style>
