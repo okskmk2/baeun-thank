@@ -14,6 +14,8 @@ import StartView from '../views/StartView.vue'
 import MainLayout from "../layouts/MainLayout.vue";
 
 import TestView from "../views/TestView.vue";
+import TestView2 from "../views/TestView2.vue";
+import TestView3 from "../views/TestView3.vue";
 
 function checkLogin() {
   return localStorage.getItem('username');
@@ -41,6 +43,16 @@ const routes = [
     path: '/test',
     name: 'test',
     component: TestView
+  },
+  {
+    path: '/test2',
+    name: 'test2',
+    component: TestView2
+  },
+  {
+    path: '/test3',
+    name: 'test3',
+    component: TestView3
   },
   {
     path: '',

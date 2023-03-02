@@ -148,7 +148,7 @@ export default {
 
 .test_main {
     overflow: auto;
-    max-height: calc(100svh - 100px);
+    max-height: calc(100dvh - 100px);
     padding: 1rem;
     box-sizing: border-box;
 }
